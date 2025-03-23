@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="feader"></div>
-      <div class="nav">
-        <img
-          class="logo"
-          src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg"
-          alt="logo"
-        />
-        <div class="space"></div>
-        <a class="item" href="#">Главная</a>
-        <a class="item" href="#">Посты</a>
-        <a class="item" href="#">Статьи</a>
-        <a class="item" href="#">Теги</a>
-        <a class="item" href="#">Темы</a>
-        <a class="item" href="#">Контакты</a>
+    <header class="header">
+      <div class="header-wrapper header-position">
+        <nav class="nav">
+          <img
+            class="logo"
+            src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg"
+            alt="logo"
+          />
+          <!--     <div class="space"></div> -->
+          <ul class="menu">
+            <li class="menu-item"><a class="item" href="#">Главная</a></li>
+            <li class="menu-item"><a class="item" href="#">Посты</a></li>
+            <li class="menu-item"><a class="item" href="#">Статьи</a></li>
+            <li class="menu-item"><a class="item" href="#">Теги</a></li>
+            <li class="menu-item"><a class="item" href="#">Темы</a></li>
+            <li class="menu-item"><a class="item" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <h1 class="header-body">Блог о творчестве, спорте и образе жизни</h1>
       </div>
-      <div class="header-body">Блог о творчестве, спорте и образе жизни</div>
-    </div>
+    </header>
     <div class="container">
       <div class="main">
         <div class="content">
@@ -35,21 +38,29 @@
               alt="10 мест, ради которых стоит проснуться на рассвете"
             />
             <div class="text-content">
-              <div class="tags">
-                <a class="tag" href="#">Travel</a>
-                <a class="tag" href="#">Health</a>
-              </div>
-              <div class="heading">
-                10 мест, ради которых стоит проснуться на рассвете
-              </div>
+              <ul class="tags">
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Travel</a>
+                </li>
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Health</a>
+                </li>
+              </ul>
+              <h2>
+                <a class="heading" href="#"
+                  >10 мест, ради которых стоит проснуться на рассвете</a
+                >
+              </h2>
               <div class="meta">
                 <time class="date">10 июня 2019</time>
-                <div class="author">Неизвестный автор</div>
+                <a class="author" href="#">Неизвестный автор</a>
               </div>
-              <p>
-                Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
-                запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
-              </p>
+              <div class="post-text">
+                <p>
+                  Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
+                  запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
+                </p>
+              </div>
             </div>
           </div>
           <div class="article-content">
@@ -59,19 +70,29 @@
               alt="Йога"
             />
             <div class="text-content">
-              <div class="tags">
-                <a class="tag" href="#">Health</a>
-                <a class="tag" href="#">Lifestyle</a>
-              </div>
-              <div class="heading">Йога для начинающих в домашних условиях</div>
+              <ul class="tags">
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Health</a>
+                </li>
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Lifestyle</a>
+                </li>
+              </ul>
+              <h2>
+                <a class="heading" href="#"
+                  >Йога для начинающих в домашних условиях</a
+                >
+              </h2>
               <div class="meta">
                 <time class="date">10 июня 2019</time>
-                <div class="author">Неизвестный автор</div>
+                <a class="author" href="#">Неизвестный автор</a>
               </div>
-              <p>
-                Расскажем, какие упражнения выбрать и как сделать коврик для
-                занятий йогой из того, что можно найти в шкафу.
-              </p>
+              <div class="post-text">
+                <p>
+                  Расскажем, какие упражнения выбрать и как сделать коврик для
+                  занятий йогой из того, что можно найти в шкафу.
+                </p>
+              </div>
             </div>
           </div>
           <div class="article-content">
@@ -81,19 +102,27 @@
               alt=""
             />
             <div class="text-content">
-              <div class="tags">
-                <a class="tag" href="#">Music</a>
-              </div>
-              <div class="heading">Лучшие музыкальные фестивали этого лета</div>
+              <ul class="tags">
+                <li class="post-tag-item"><a class="tag" href="#">Music</a></li>
+              </ul>
+              <h2>
+                <a class="heading" href="#"
+                  >Лучшие музыкальные фестивали этого лета</a
+                >
+              </h2>
               <div class="meta">
                 <time class="date">10 июня 2019</time>
-                <div class="author">Неизвестный автор</div>
+                <a class="author" href="#">Неизвестный автор</a>
               </div>
-              <p>
-                Лето на носу, а с ним и музыкальные фестивали. На каком же из
-                них вы разобьёте свою палатку?
-              </p>
-              <p>Мы составили список лучших летних фестивалей по всему миру.</p>
+              <div class="post-text">
+                <p>
+                  Лето на носу, а с ним и музыкальные фестивали. На каком же из
+                  них вы разобьёте свою палатку?
+                </p>
+                <p>
+                  Мы составили список лучших летних фестивалей по всему миру.
+                </p>
+              </div>
             </div>
           </div>
           <div class="article-content">
@@ -103,19 +132,25 @@
               alt="Наукоёмкий подход к кулинарии"
             />
             <div class="text-content">
-              <div class="tags">
-                <a class="tag" href="#">Lifestyle</a>
-                <a class="tag" href="#">Food</a>
-              </div>
-              <div class="heading">Наукоёмкий подход к кулинарии</div>
+              <ul class="tags">
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Lifestyle</a>
+                </li>
+                <li class="post-tag-item"><a class="tag" href="#">Food</a></li>
+              </ul>
+              <h2>
+                <a class="heading" href="#">Наукоёмкий подход к кулинарии</a>
+              </h2>
               <div class="meta">
                 <time class="date">10 июня 2019</time>
-                <div class="author">Неизвестный автор</div>
+                <a class="author" href="#">Неизвестный автор</a>
               </div>
-              <p>
-                Узнаем основы проектирования новых пищевых и около-пищевых
-                опытов, вскроем физику, химию и микробиологию еды.
-              </p>
+              <div class="post-text">
+                <p>
+                  Узнаем основы проектирования новых пищевых и около-пищевых
+                  опытов, вскроем физику, химию и микробиологию еды.
+                </p>
+              </div>
             </div>
           </div>
           <div class="article-content">
@@ -125,23 +160,31 @@
               alt="Делаем модные принты на подушках для интерьера"
             />
             <div class="text-content">
-              <div class="tags">
-                <a class="tag" href="#">Lifestyle</a>
-                <a class="tag" href="#">Interior</a>
-                <a class="tag" href="#">Art</a>
-              </div>
-              <div class="heading">
-                Делаем модные принты на подушках для интерьера
-              </div>
+              <ul class="tags">
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Lifestyle</a>
+                </li>
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Interior</a>
+                </li>
+                <li class="post-tag-item"><a class="tag" href="#">Art</a></li>
+              </ul>
+              <h2>
+                <a class="heading" href="#"
+                  >Делаем модные принты на подушках для интерьера</a
+                >
+              </h2>
               <div class="meta">
                 <time class="date">10 июня 2019</time>
-                <div class="author">Неизвестный автор</div>
+                <a class="author" href="#">Неизвестный автор</a>
               </div>
-              <p>
-                Подушки для дивана целесообразнее заказать в съемных чехлах на
-                молнии, если потребуется чистка подушек, проще снять чехлы, чем
-                везти подушку в химчистку.
-              </p>
+              <div class="post-text">
+                <p>
+                  Подушки для дивана целесообразнее заказать в съемных чехлах на
+                  молнии, если потребуется чистка подушек, проще снять чехлы,
+                  чем везти подушку в химчистку.
+                </p>
+              </div>
             </div>
           </div>
           <div class="article-content">
@@ -151,20 +194,30 @@
               alt="Как первый раз отправиться в горы?"
             />
             <div class="text-content">
-              <div class="tags">
-                <a class="tag" href="#">Travel</a>
-                <a class="tag" href="#">Lifestyle</a>
-              </div>
-              <div class="heading">Как первый раз отправиться в горы?</div>
+              <ul class="tags">
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Travel</a>
+                </li>
+                <li class="post-tag-item">
+                  <a class="tag" href="#">Lifestyle</a>
+                </li>
+              </ul>
+              <h2>
+                <a class="heading" href="#"
+                  >Как первый раз отправиться в горы?</a
+                >
+              </h2>
               <div class="meta">
                 <time class="date">10 июня 2019</time>
-                <div class="author">Неизвестный автор</div>
+                <a class="author" href="#">Неизвестный автор</a>
               </div>
-              <p>
-                Для начала нужно определиться, в каком формате пройдёт ваше
-                путешествие. Это зависит от многих факторов, не только от ваших
-                желаний и интересов.
-              </p>
+              <div class="post-text">
+                <p>
+                  Для начала нужно определиться, в каком формате пройдёт ваше
+                  путешествие. Это зависит от многих факторов, не только от
+                  ваших желаний и интересов.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -319,13 +372,28 @@
           </ul>
         </div>
       </div>
-      <div class="footer">
-        <a href="#" class="link"></a>
-        <a href="#" class="link"></a>
-        <a href="#" class="link"></a>
-      </div>
-      <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
-      <div></div>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <address class="footer-address">
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a class="footer-list-link footer-list-link-one" href="#"></a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-link footer-list-link-two" href="#"></a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-link footer-list-link-three" href="#"></a>
+              </li>
+            </ul>
+          </address>
+          <div class="footer-copyright">
+            <a class="footer-copyright-link" href="#"
+              >Copyright © 2009–2019 City Blog LLC.</a
+            >
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
