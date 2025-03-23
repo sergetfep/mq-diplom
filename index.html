@@ -221,11 +221,10 @@
             </div>
           </div>
         </div>
-        <div class="sidebar">
-          <div class="post header-post">Новые посты</div>
-          <div class="stripe"></div>
-          <div class="new-posts">
-            <div class="new-post">
+        <sidebar class="sidebar">
+          <h3 class="post header-post">Новые посты</h3>
+          <section class="new-posts">
+            <article class="new-post">
               <img
                 class="small-pic"
                 src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg"
@@ -233,12 +232,14 @@
               />
               <div class="text-post">
                 <time class="min-date">14 июня 2019</time>
-                <span class="min-heading"
-                  >10 мест, ради которых стоит проснуться на рассвете</span
-                >
+                <h4>
+                  <a class="min-heading" href="#"
+                    >10 мест, ради которых стоит проснуться на рассвете</a
+                  >
+                </h4>
               </div>
-            </div>
-            <div class="new-post">
+            </article>
+            <article class="new-post">
               <img
                 class="small-pic"
                 src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg"
@@ -246,10 +247,10 @@
               />
               <div class="text-post">
                 <time class="min-date">14 июня 2019</time>
-                <span class="min-heading">Йога для домашних</span>
+                <h4><a class="min-heading" href="#">Йога для домашних</a></h4>
               </div>
-            </div>
-            <div class="new-post">
+            </article>
+            <article class="new-post">
               <img
                 class="small-pic"
                 src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg"
@@ -257,36 +258,46 @@
               />
               <div class="text-post">
                 <time class="min-date">14 июня 2019</time>
-                <span class="min-heading"
-                  >как мы превратили классное место в балкон</span
-                >
+                <h4>
+                  <a class="min-heading" href="#"
+                    >как мы превратили классное место в балкон</a
+                  >
+                </h4>
               </div>
-            </div>
-            <div class="new-post">
-              <img
-                class="small-pic"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg"
-                alt="Кулинарный подход к науке"
-              />
+            </article>
+            <article class="new-post">
+              <figure>
+                <img
+                  class="small-pic"
+                  src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg"
+                  alt="Кулинарный подход к науке"
+                />
+              </figure>
               <div class="text-post">
                 <time class="min-date">14 июня 2019</time>
-                <span class="min-heading">Кулинарный подход к науке</span>
+                <h4>
+                  <a class="min-heading" href="#">Кулинарный подход к науке</a>
+                </h4>
               </div>
-            </div>
-            <div class="new-post">
-              <img
-                class="small-pic"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg"
-                alt="лучшие прически для распущенных волос"
-              />
+            </article>
+            <article class="new-post">
+              <figure>
+                <img
+                  class="small-pic"
+                  src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg"
+                  alt="лучшие прически для распущенных волос"
+                />
+              </figure>
               <div class="text-post">
                 <time class="min-date">14 июня 2019</time>
-                <span class="min-heading"
-                  >лучшие прически для распущенных волос</span
-                >
+                <h4>
+                  <a class="min-heading" href="#"
+                    >лучшие прически для распущенных волос</a
+                  >
+                </h4>
               </div>
-            </div>
-          </div>
+            </article>
+          </section>
           <form class="posts-search-form">
             <label class="posts-search-label">
               <input
@@ -305,95 +316,101 @@
               />
             </button>
           </form>
-          <div class="post">Рассылка</div>
-          <form class="subscribe-form">
-            <label class="subscribe-form-label">
-              <input
-                class="subscribe-form-input"
-                type="email"
-                name="query"
-                placeholder="Ваш email"
-                required
-              />
-              <span class="visually-hidden">Email</span>
-            </label>
-            <button class="subscribe-form-button" type="submit">
-              Подписаться
-              <span class="visually-hidden">Подписаться</span>
-            </button>
-          </form>
-          <div class="post">Теги</div>
-          <ul class="tags">
-            <li class="tag-item"><a class="tag-link" href="#">Fashion</a></li>
-            <li class="tag-item"><a class="tag-link" href="#">Music</a></li>
-            <li class="tag-item"><a class="tag-link" href="#">Lifestyle</a></li>
-            <li class="tag-item"><a class="tag-link" href="#">Art</a></li>
-            <li class="tag-item"><a class="tag-link" href="#">Interior</a></li>
-            <li class="tag-item"><a class="tag-link" href="#">Travel</a></li>
-            <li class="tag-item"><a class="tag-link" href="#">Food</a></li>
-            <li class="tag-item"><a class="tag-link" href="#">Health</a></li>
-          </ul>
-          <div class="post heading-post">Темы</div>
-          <ul class="themes">
-            <li class="theme">
-              <a class="theme-link" href="#"
-                >Красота<span class="sup">12</span></a
-              >
-              <div class="theme-stripe"></div>
-            </li>
-            <li class="theme">
-              <a class="theme-link" href="#"
-                >Здоровье<span class="sup">5</span></a
-              >
-              <div class="theme-stripe"></div>
-            </li>
-            <li class="theme">
-              <a class="theme-link" href="#"
-                >Образ жизни<span class="sup">145</span></a
-              >
-              <div class="theme-stripe"></div>
-            </li>
-            <li class="theme">
-              <a class="theme-link" href="#"
-                >Музыка<span class="sup">28</span></a
-              >
-              <div class="theme-stripe"></div>
-            </li>
-            <li class="theme">
-              <a class="theme-link" href="#"
-                >Спорт<span class="sup">62</span></a
-              >
-              <div class="theme-stripe"></div>
-            </li>
-            <li class="theme">
-              <a class="theme-link" href="#">Йога<span class="sup">8</span></a>
-              <div class="theme-stripe"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="footer-wrapper">
-          <address class="footer-address">
-            <ul class="footer-list">
-              <li class="footer-list-item">
-                <a class="footer-list-link footer-list-link-one" href="#"></a>
+          <section class="subscribes">
+            <h3 class="post">Рассылка</h3>
+            <form class="subscribe-form">
+              <label class="subscribe-form-label">
+                <input
+                  class="subscribe-form-input"
+                  type="email"
+                  name="query"
+                  placeholder="Ваш email"
+                  required
+                />
+                <span class="visually-hidden">Email</span>
+              </label>
+              <button class="subscribe-form-button" type="submit">
+                Подписаться
+                <span class="visually-hidden">Подписаться</span>
+              </button>
+            </form>
+          </section>
+          <section>
+            <h3 class="post">Теги</h3>
+            <ul class="tags">
+              <li class="tag-item"><a class="tag-link" href="#">Fashion</a></li>
+              <li class="tag-item"><a class="tag-link" href="#">Music</a></li>
+              <li class="tag-item">
+                <a class="tag-link" href="#">Lifestyle</a>
               </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link footer-list-link-two" href="#"></a>
+              <li class="tag-item"><a class="tag-link" href="#">Art</a></li>
+              <li class="tag-item">
+                <a class="tag-link" href="#">Interior</a>
               </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link footer-list-link-three" href="#"></a>
+              <li class="tag-item"><a class="tag-link" href="#">Travel</a></li>
+              <li class="tag-item"><a class="tag-link" href="#">Food</a></li>
+              <li class="tag-item"><a class="tag-link" href="#">Health</a></li>
+            </ul>
+          </section>
+          <section class="post-section">
+            <h3 class="post heading-post">Темы</h3>
+            <ul class="themes">
+              <li class="theme">
+                <a class="theme-link" href="#"
+                  >Красота<span class="sup">12</span></a
+                >
+              </li>
+              <li class="theme">
+                <a class="theme-link" href="#"
+                  >Здоровье<span class="sup">5</span></a
+                >
+              </li>
+              <li class="theme">
+                <a class="theme-link" href="#"
+                  >Образ жизни<span class="sup">145</span></a
+                >
+              </li>
+              <li class="theme">
+                <a class="theme-link" href="#"
+                  >Музыка<span class="sup">28</span></a
+                >
+              </li>
+              <li class="theme">
+                <a class="theme-link" href="#"
+                  >Спорт<span class="sup">62</span></a
+                >
+              </li>
+              <li class="theme">
+                <a class="theme-link" href="#"
+                  >Йога<span class="sup">8</span></a
+                >
               </li>
             </ul>
-          </address>
-          <div class="footer-copyright">
-            <a class="footer-copyright-link" href="#"
-              >Copyright © 2009–2019 City Blog LLC.</a
-            >
-          </div>
-        </div>
-      </footer>
+          </section>
+        </sidebar>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <address class="footer-address">
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a class="footer-list-link footer-list-link-one" href="#"></a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-link footer-list-link-two" href="#"></a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-link footer-list-link-three" href="#"></a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer-copyright">
+          <a class="footer-copyright-link" href="#"
+            >Copyright © 2009–2019 City Blog LLC.</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
