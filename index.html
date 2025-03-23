@@ -43,7 +43,7 @@
                 10 мест, ради которых стоит проснуться на рассвете
               </div>
               <div class="meta">
-                <div class="date">10 июня 2019</div>
+                <time class="date">10 июня 2019</time>
                 <div class="author">Неизвестный автор</div>
               </div>
               <p>
@@ -65,7 +65,7 @@
               </div>
               <div class="heading">Йога для начинающих в домашних условиях</div>
               <div class="meta">
-                <div class="date">10 июня 2019</div>
+                <time class="date">10 июня 2019</time>
                 <div class="author">Неизвестный автор</div>
               </div>
               <p>
@@ -86,7 +86,7 @@
               </div>
               <div class="heading">Лучшие музыкальные фестивали этого лета</div>
               <div class="meta">
-                <div class="date">10 июня 2019</div>
+                <time class="date">10 июня 2019</time>
                 <div class="author">Неизвестный автор</div>
               </div>
               <p>
@@ -109,7 +109,7 @@
               </div>
               <div class="heading">Наукоёмкий подход к кулинарии</div>
               <div class="meta">
-                <div class="date">10 июня 2019</div>
+                <time class="date">10 июня 2019</time>
                 <div class="author">Неизвестный автор</div>
               </div>
               <p>
@@ -134,7 +134,7 @@
                 Делаем модные принты на подушках для интерьера
               </div>
               <div class="meta">
-                <div class="date">10 июня 2019</div>
+                <time class="date">10 июня 2019</time>
                 <div class="author">Неизвестный автор</div>
               </div>
               <p>
@@ -157,7 +157,7 @@
               </div>
               <div class="heading">Как первый раз отправиться в горы?</div>
               <div class="meta">
-                <div class="date">10 июня 2019</div>
+                <time class="date">10 июня 2019</time>
                 <div class="author">Неизвестный автор</div>
               </div>
               <p>
@@ -179,10 +179,10 @@
                 alt="10 мест, ради которых стоит проснуться на рассвете"
               />
               <div class="text-post">
-                <div class="min-date">14 июня 2019</div>
-                <div class="min-heading">
-                  10 мест, ради которых стоит проснуться на рассвете
-                </div>
+                <time class="min-date">14 июня 2019</time>
+                <span class="min-heading"
+                  >10 мест, ради которых стоит проснуться на рассвете</span
+                >
               </div>
             </div>
             <div class="new-post">
@@ -192,8 +192,8 @@
                 alt="Йога для домашних"
               />
               <div class="text-post">
-                <div class="min-date">14 июня 2019</div>
-                <div class="min-heading">Йога для домашних</div>
+                <time class="min-date">14 июня 2019</time>
+                <span class="min-heading">Йога для домашних</span>
               </div>
             </div>
             <div class="new-post">
@@ -203,10 +203,10 @@
                 alt="как мы превратили классное место в балкон"
               />
               <div class="text-post">
-                <div class="min-date">14 июня 2019</div>
-                <div class="min-heading">
-                  как мы превратили классное место в балкон
-                </div>
+                <time class="min-date">14 июня 2019</time>
+                <span class="min-heading"
+                  >как мы превратили классное место в балкон</span
+                >
               </div>
             </div>
             <div class="new-post">
@@ -216,8 +216,8 @@
                 alt="Кулинарный подход к науке"
               />
               <div class="text-post">
-                <div class="min-date">14 июня 2019</div>
-                <div class="min-heading">Кулинарный подход к науке</div>
+                <time class="min-date">14 июня 2019</time>
+                <span class="min-heading">Кулинарный подход к науке</span>
               </div>
             </div>
             <div class="new-post">
@@ -227,78 +227,102 @@
                 alt="лучшие прически для распущенных волос"
               />
               <div class="text-post">
-                <div class="min-date">14 июня 2019</div>
-                <div class="min-heading">
-                  лучшие прически для распущенных волос
-                </div>
+                <time class="min-date">14 июня 2019</time>
+                <span class="min-heading"
+                  >лучшие прически для распущенных волос</span
+                >
               </div>
             </div>
           </div>
-          <div class="input">
-            <input class="search" type="text" placeholder="Найти..." />
-            <div class="button">
+          <form class="posts-search-form">
+            <label class="posts-search-label">
+              <input
+                type="search"
+                class="posts-search-input"
+                placeholder="Найти..."
+              />
+              <span class="visually-hidden">Найти</span>
+            </label>
+            <button class="posts-search-button" type="submit">
+              <span class="visually-hidden">Найти</span>
               <img
                 class="image-button"
                 src="https://netology-code.github.io/html-2-diploma/sources/images/search.svg"
                 alt="Search button"
               />
-            </div>
-          </div>
+            </button>
+          </form>
           <div class="post">Рассылка</div>
-          <div class="stripe"></div>
-          <div class="input-email">
-            <input class="search" type="text" placeholder="Ваш email-адрес" />
-          </div>
-          <button class="btn">Подписаться</button>
+          <form class="subscribe-form">
+            <label class="subscribe-form-label">
+              <input
+                class="subscribe-form-input"
+                type="email"
+                name="query"
+                placeholder="Ваш email"
+                required
+              />
+              <span class="visually-hidden">Email</span>
+            </label>
+            <button class="subscribe-form-button" type="submit">
+              Подписаться
+              <span class="visually-hidden">Подписаться</span>
+            </button>
+          </form>
           <div class="post">Теги</div>
-          <div class="stripe"></div>
-          <div class="tags">
-            <div class="tag-item">Fashion</div>
-            <div class="tag-item">Music</div>
-            <div class="tag-item">Lifestyle</div>
-            <div class="tag-item">Art</div>
-            <div class="tag-item">Interior</div>
-            <div class="tag-item">Travel</div>
-            <div class="tag-item">Food</div>
-            <div class="tag-item">Health</div>
-          </div>
+          <ul class="tags">
+            <li class="tag-item"><a class="tag-link" href="#">Fashion</a></li>
+            <li class="tag-item"><a class="tag-link" href="#">Music</a></li>
+            <li class="tag-item"><a class="tag-link" href="#">Lifestyle</a></li>
+            <li class="tag-item"><a class="tag-link" href="#">Art</a></li>
+            <li class="tag-item"><a class="tag-link" href="#">Interior</a></li>
+            <li class="tag-item"><a class="tag-link" href="#">Travel</a></li>
+            <li class="tag-item"><a class="tag-link" href="#">Food</a></li>
+            <li class="tag-item"><a class="tag-link" href="#">Health</a></li>
+          </ul>
           <div class="post heading-post">Темы</div>
-          <div class="stripe"></div>
-          <div class="themes">
-            <div class="theme">Красота<sup>12</sup></div>
-            <div class="theme-stripe"></div>
-            <div class="theme">Здоровье<sup>5</sup></div>
-            <div class="theme-stripe"></div>
-            <div class="theme">Образ жизни<sup>145</sup></div>
-            <div class="theme-stripe"></div>
-            <div class="theme">Музыка<sup>28</sup></div>
-            <div class="theme-stripe"></div>
-            <div class="theme">Спорт<sup>62</sup></div>
-            <div class="theme-stripe"></div>
-            <div class="theme">Йога<sup>8</sup></div>
-            <div class="theme-stripe"></div>
-          </div>
+          <ul class="themes">
+            <li class="theme">
+              <a class="theme-link" href="#"
+                >Красота<span class="sup">12</span></a
+              >
+              <div class="theme-stripe"></div>
+            </li>
+            <li class="theme">
+              <a class="theme-link" href="#"
+                >Здоровье<span class="sup">5</span></a
+              >
+              <div class="theme-stripe"></div>
+            </li>
+            <li class="theme">
+              <a class="theme-link" href="#"
+                >Образ жизни<span class="sup">145</span></a
+              >
+              <div class="theme-stripe"></div>
+            </li>
+            <li class="theme">
+              <a class="theme-link" href="#"
+                >Музыка<span class="sup">28</span></a
+              >
+              <div class="theme-stripe"></div>
+            </li>
+            <li class="theme">
+              <a class="theme-link" href="#"
+                >Спорт<span class="sup">62</span></a
+              >
+              <div class="theme-stripe"></div>
+            </li>
+            <li class="theme">
+              <a class="theme-link" href="#">Йога<span class="sup">8</span></a>
+              <div class="theme-stripe"></div>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="footer">
-        <div class="image">
-          <img
-            src="https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg"
-            alt="dribbble"
-          />
-        </div>
-        <div class="image">
-          <img
-            src="https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg"
-            alt="pinterest"
-          />
-        </div>
-        <div class="image">
-          <img
-            src="https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg"
-            alt="tumblr"
-          />
-        </div>
+        <a href="#" class="link"></a>
+        <a href="#" class="link"></a>
+        <a href="#" class="link"></a>
       </div>
       <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
       <div></div>
