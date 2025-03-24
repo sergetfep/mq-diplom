@@ -1,15 +1,13 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff")
-    format("truetype");
+  src: url("../fonts/OpenSans-Regular.woff") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff")
-    format("truetype");
+  src: url("../fonts/OpenSans-Bold.woff") format("truetype");
   font-weight: 700;
   font-style: bold;
 }
@@ -27,7 +25,7 @@ body {
 }
 
 .header {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-size: cover;
   min-height: 446px;
   position: relative;
@@ -364,24 +362,6 @@ li {
   padding: 0 24px;
 }
 
-.link-1 {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
-.link-2 {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
-.link-3 {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
 .container {
   margin-top: 60px;
 }
@@ -426,19 +406,19 @@ li {
 }
 
 .footer-list-link-one {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+  background-image: url("../svg/001-dribbble.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
 
 .footer-list-link-two {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+  background-image: url("../svg/002-pinterest.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
 
 .footer-list-link-three {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+  background-image: url("../svg/003-tumblr.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -468,4 +448,307 @@ li {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.new-trends {
+  display: flex;
+  margin-bottom: 25px;
+  gap: 5px;
+}
+
+.new-trend {
+  width: calc(25%-11.25px);
+  max-height: 315px;
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  padding: 20px;
+}
+
+.trend-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trend-img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.new-trend-content {
+  position: relative;
+  padding: 20px;
+}
+
+.border-content {
+  border: 3px solid #b59f5b;
+  padding: 20px;
+}
+
+.trend-img::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heading-trend {
+  color: white;
+}
+
+.container-our-goods {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+  margin-top: 50px;
+}
+
+.our-goods {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 150px;
+  gap: 70px;
+}
+
+.our-good {
+  width: 33.333%;
+  max-height: 315px;
+  /* height: 315px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  position: relative;
+  /* overflow: hidden; */
+  flex: 1;
+  padding: 20px;
+}
+
+.our-good-img {
+  position: relative;
+  /* top: 0;
+  left: 0; */
+  /* bottom: 0; */
+  /* right: 0; */
+  width: 100%;
+  /* height: 100%; */
+  /* padding: 20px; */
+  /* transform: translateY(-100%); */
+  z-index: -1;
+}
+
+.our-good-img > img {
+  position: absolute;
+  /* top: 0; */
+  left: 50%;
+  bottom: 0;
+  /* right: 0; */
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  transform: translateX(-50%);
+}
+
+.container-our-good-buying {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 10px;
+}
+
+.crossed-out-price {
+  text-decoration: line-through;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.our-good-btn,
+.submit-btn {
+  color: white;
+  background-color: #b59f5b;
+  border: none;
+  padding: 13px 30px;
+}
+
+.our-good-btn-text {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.our-good-text-link {
+  color: #b59f5b;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Стили для pop-up окна */
+.popup {
+  display: none; /* Скрыто по умолчанию. Для отображения: display: flex; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 5px;
+  width: 300px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-close {
+  position: absolute;
+  /* top: 10px;
+  right: 10px; */
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+  background-image: url("../svg/form-x.svg");
+  background-repeat: no-repeat;
+  transition: transform(calc(-100% - 25px), calc(-100% - 25px));
+}
+
+#openPopupBtn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#openPopupBtn:hover {
+  background-color: #45a049;
+}
+
+/* начало select */
+
+select {
+  appearance: none; /* Убирает стандартный стиль для select в некоторых браузерах */
+  -webkit-appearance: none; /* Для WebKit браузеров (например, Chrome, Safari) */
+  -moz-appearance: none; /* Для Firefox */
+
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Стиль для стрелочки */
+select::-ms-expand {
+  display: none; /* Скрываем стандартную стрелочку в Internet Explorer */
+}
+
+select {
+  position: relative;
+  background-image: url("../svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+.custom-select {
+  background-color: #eeeeee;
+}
+/* конец select */
+
+fieldset {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Скрытие стандартных радиокнопок */
+input[type="radio"] {
+  display: none;
+}
+
+/* Стиль для кастомной радиокнопки */
+.custom-radio {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 20px;
+  padding-left: 30px; /* Отступ, чтобы текст не перекрывал изображение */
+}
+
+/* Стиль для кастомного радиобаттона (используем изображения) */
+.radio-btn {
+  width: 24px;
+  height: 24px;
+  background-image: url("../svg/form-empty-circle.svg"); /* Фон для невыбранного состояния */
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin-right: 10px;
+  transition: background-image 0.3s ease;
+}
+
+/* Когда радиокнопка выбрана, меняем изображение */
+.custom-radio input[type="radio"]:checked + .radio-btn {
+  background-image: url("../svg/form-circle.svg"); /* Фон для выбранного состояния */
+}
+
+.textarea-feedback {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  background-color: #eeeeee;
+  margin-top: 10px;
+}
+
+.textarea-feedback::placeholder {
+  color: #888;
+}
+
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
 }
