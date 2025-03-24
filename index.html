@@ -590,48 +590,51 @@
         </div>
       </div>
     </footer>
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <span class="popup-close" id="closePopupBtn">&times;</span>
-        <h2 class="post header-post">Ваш фидбек</h2>
-        <form action="">
-          <label for="feedback-select">Как часто вы заходите на сайт?</label>
-          <select class="custom-select" id="fruit-select">
-            <option value="day" selected>Почти каждый день</option>
-            <option value="week">Раз в неделю</option>
-            <option value="month">Раз в месяц</option>
-          </select>
-          <fieldset class="e-mail-subscribe">
-            <legend>Вы подписаны на e-mail рассылку?</legend>
 
-            <label class="custom-radio" for="red">
-              <input type="radio" id="yes" name="color" value="yes" checked />
-              <span class="radio-btn"></span>
-              Да
-            </label>
-
-            <label class="custom-radio" for="red">
-              <input type="radio" id="no" name="color" value="no" />
-              <span class="radio-btn"></span>
-              Нет
-            </label>
-          </fieldset>
-          <label for="textarea-feedback"
-            >Расскажите, какой контент вы хотели бы увидеть на нашем сайте?
-            <textarea
-              class="textarea-feedback"
-              id="textarea-feedback"
-              placeholder="Может, больше рецептов?"
-            >
-    Может, больше рецептов?
-  </textarea
-            >
+    <div class="cover-popup">
+      <form class="popup-form">
+        <span class="section-title-top">Ваш фидбек</span>
+        <div class="form-row">
+          <label class="form-group">
+            <span class="form-hint">Как часто вы заходите на сайт?</span>
+            <select class="form-select">
+              <option value="Почти каждый день" selected="">
+                Почти каждый день
+              </option>
+              <option value="Раз в несколько дней">Раз в несколько дней</option>
+              <option value="Раз в несколько недель">
+                Раз в несколько недель
+              </option>
+              <option value="Несколько раз в год">Несколько раз в год</option>
+            </select>
           </label>
-          <div class="submit-btn-container">
-            <button class="submit-btn" type="submit">Отправить</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="form-row">
+          <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group" checked />
+            <span class="radio-group-text">Да </span>
+          </label>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group" />
+            <span class="radio-group-text">Нет</span>
+          </label>
+        </div>
+        <div class="form-row">
+          <span class="form-hint"
+            >Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span
+          >
+          <label class="form-group">
+            <textarea
+              class="textarea-style"
+              placeholder="Может больше рецептов?"
+            ></textarea>
+          </label>
+        </div>
+        <div class="form-row">
+          <button class="popup-button">Отправить</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>

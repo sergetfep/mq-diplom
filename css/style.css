@@ -83,7 +83,6 @@ body {
   font-size: 43px;
   max-width: 680px;
   text-align: center;
-  /*   z-index: 1; */
   padding: 120px 0;
   margin: auto;
 }
@@ -535,35 +534,23 @@ li {
 .our-good {
   width: 33.333%;
   max-height: 315px;
-  /* height: 315px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: end; */
   position: relative;
-  /* overflow: hidden; */
   flex: 1;
   padding: 20px;
 }
 
 .our-good-img {
   position: relative;
-  /* top: 0;
-  left: 0; */
-  /* bottom: 0; */
-  /* right: 0; */
   width: 100%;
-  /* height: 100%; */
-  /* padding: 20px; */
-  /* transform: translateY(-100%); */
   z-index: -1;
 }
 
 .our-good-img > img {
   position: absolute;
-  /* top: 0; */
   left: 50%;
   bottom: 0;
-  /* right: 0; */
   object-fit: cover;
   width: 100%;
   max-width: 100%;
@@ -606,149 +593,154 @@ li {
   text-decoration: none;
 }
 
-/* Стили для pop-up окна */
-.popup {
-  display: none; /* Скрыто по умолчанию. Для отображения: display: flex; */
-  position: fixed;
-  top: 0;
-  left: 0;
+/* POPUP */
+
+.cover-popup {
+  visibility: hidden; /*  Отключение popup окна  */
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 200;
 }
 
-.popup-content {
-  background-color: white;
-  padding: 20px;
-  padding-top: 0;
-  border-radius: 5px;
-  width: 300px;
-  /* text-align: center; */
+.popup-form::before {
+  content: "";
+  background-image: url(../svg/form-x.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -27px;
+  right: 0;
+}
+
+.popup-form {
+  width: 392px;
+  height: 589px;
+  position: sticky;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 55px 30px 50px;
+  box-sizing: border-box;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.popup-close {
-  position: absolute;
-  /* top: 10px;
-  right: 10px; */
-  top: 0;
-  right: 0;
-  font-size: 30px;
-  cursor: pointer;
-  background-image: url("../svg/form-x.svg");
-  background-repeat: no-repeat;
-  transition: transform(calc(-100% - 25px), calc(-100% - 25px));
+.form-hint {
+  display: block;
+  margin-bottom: 10px;
 }
 
-#openPopupBtn {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
+.form-row {
+  margin: 15px 0;
 }
 
-#openPopupBtn:hover {
-  background-color: #45a049;
-}
-
-/* начало select */
-
-select {
-  appearance: none; /* Убирает стандартный стиль для select в некоторых браузерах */
-  -webkit-appearance: none; /* Для WebKit браузеров (например, Chrome, Safari) */
-  -moz-appearance: none; /* Для Firefox */
-
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  color: #333;
-  cursor: pointer;
+.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
   width: 100%;
-  outline: none;
-  box-sizing: border-box;
-}
-
-/* Стиль для стрелочки */
-select::-ms-expand {
-  display: none; /* Скрываем стандартную стрелочку в Internet Explorer */
-}
-
-select {
-  position: relative;
-  background-image: url("../svg/form-arrows.svg");
+  height: 49px;
+  padding-left: 20px;
+  background: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 12px;
+  background-position: top 45% right 15px;
+  background-size: 10px;
+  background-color: rgb(244, 247, 246, 0.6);
+  cursor: pointer;
 }
-.custom-select {
-  background-color: #eeeeee;
-}
-/* конец select */
 
-fieldset {
-  border: none;
-  margin-top: 20px;
+.section-title-top {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-/* Скрытие стандартных радиокнопок */
-input[type="radio"] {
-  display: none;
-}
-
-/* Стиль для кастомной радиокнопки */
-.custom-radio {
-  position: relative;
+.radio-group-text::before {
+  content: "";
   display: inline-block;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 20px;
-  padding-left: 30px; /* Отступ, чтобы текст не перекрывал изображение */
+  width: 20px;
+  height: 20px;
+  background-image: url("../svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
 }
 
-/* Стиль для кастомного радиобаттона (используем изображения) */
-.radio-btn {
-  width: 24px;
-  height: 24px;
-  background-image: url("../svg/form-empty-circle.svg"); /* Фон для невыбранного состояния */
-  background-size: cover;
-  background-position: center;
+.radio-group-text::before {
   display: inline-block;
-  margin-right: 10px;
-  transition: background-image 0.3s ease;
+  vertical-align: middle;
 }
 
-/* Когда радиокнопка выбрана, меняем изображение */
-.custom-radio input[type="radio"]:checked + .radio-btn {
-  background-image: url("../svg/form-circle.svg"); /* Фон для выбранного состояния */
+.radio-group-text::before {
+  margin-right: 8px;
 }
 
-.textarea-feedback {
+.radio-group {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.radio-group:nth-of-type(n + 2) {
+  margin-left: 15px;
+}
+
+.radio:checked ~ .radio-group-text::before {
+  background-image: url("../svg/form-circle.svg");
+}
+
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-hint {
+  font-size: 14px;
+  text-align: left;
+}
+
+.option-text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.541);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.textarea-style {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgb(244, 247, 246, 0.6);
+  box-sizing: border-box;
   width: 100%;
-  height: 200px;
+  height: 132px;
+  padding: 20px;
+  border: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.541);
   resize: none;
-  background-color: #eeeeee;
-  margin-top: 10px;
 }
 
-.textarea-feedback::placeholder {
-  color: #888;
-}
-
-.submit-btn-container {
-  display: flex;
-  justify-content: center;
-}
-
-.submit-btn {
+.popup-button {
   width: 100%;
-  padding: 10px;
+  height: 48px;
+  background-color: #b59f5b;
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
 }
