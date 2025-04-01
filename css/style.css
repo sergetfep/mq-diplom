@@ -124,6 +124,11 @@ body {
   text-decoration: none;
 }
 
+.nav-item a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /*TRANDS NOW*/
 
 .section-title-top {
@@ -353,6 +358,10 @@ body {
   padding-right: 15px;
 }
 
+.tags-anonse-item a:hover {
+  text-decoration: underline;
+}
+
 .article-post-anonse {
   margin-bottom: 30px;
 }
@@ -369,6 +378,10 @@ body {
   text-align: left;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.article-title a:hover {
+  font-weight: 900;
 }
 
 .date {
@@ -488,6 +501,12 @@ body {
   -moz-appearance: none;
 }
 
+.search-input:focus,
+.mailing-input:focus {
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
 .visually-hidden {
   width: 1px;
   height: 1px;
@@ -549,13 +568,16 @@ input::placeholder {
   display: inline-flex;
   justify-content: center;
   flex-direction: column;
-  padding: 5px;
+  padding: 8px;
   border: 3px solid #eeeeee;
-  background-color: #f4f3f1;
   box-sizing: border-box;
   height: 30px;
   margin-right: 5px;
   margin-bottom: 5px;
+}
+
+.tags-item a:hover {
+  font-weight: bold;
 }
 
 .tags-item-link {
@@ -616,7 +638,7 @@ input::placeholder {
   margin-top: 17%;
 }
 
-.products-item-one::before {
+/* .products-item-one::before {
   content: "";
   display: block;
   width: 86.5%;
@@ -628,6 +650,23 @@ input::placeholder {
   position: absolute;
   bottom: 87%;
   left: 7%;
+  z-index: -1;
+} */
+
+our-good-img {
+  position: relative;
+  width: 100%;
+}
+
+.our-good-img > img {
+  position: absolute;
+  left: 50%;
+  bottom: 245px;
+  object-fit: cover;
+  /* width: 100%; */
+  max-width: 100%;
+  height: 200px;
+  transform: translateX(-50%);
   z-index: -1;
 }
 
@@ -798,8 +837,11 @@ input::placeholder {
 
 /* POPUP */
 
-.cover-popup {
+._hidden {
   visibility: hidden;
+}
+
+.cover-popup {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -848,7 +890,6 @@ input::placeholder {
   width: 100%;
   height: 49px;
   padding-left: 20px;
-  border-bottom: 0.5px solid rgb(181, 159, 91);
   background: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
   background-position: top 45% right 15px;
@@ -930,9 +971,9 @@ input::placeholder {
   height: 132px;
   padding: 20px;
   border: 0;
-  border-bottom: 1px solid rgb(181, 159, 91);
   font-size: 14px;
   color: rgba(0, 0, 0, 0.541);
+  resize: none;
 }
 
 textarea:hover,
