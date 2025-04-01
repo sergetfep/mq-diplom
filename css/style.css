@@ -638,65 +638,20 @@ input::placeholder {
   margin-top: 17%;
 }
 
-/* .products-item-one::before {
-  content: "";
-  display: block;
-  width: 86.5%;
-  height: 79%;
-  background-image: url(../images/shop-item-desk1.jpg);
-  background-repeat: no-repeat;
-  background-position: center left -5%;
-  background-size: cover;
-  position: absolute;
-  bottom: 87%;
-  left: 7%;
-  z-index: -1;
-} */
-
-our-good-img {
+.products-item-img {
   position: relative;
   width: 100%;
 }
 
-.our-good-img > img {
+.products-item-img > img {
   position: absolute;
+  top: -227px;
   left: 50%;
-  bottom: 245px;
   object-fit: cover;
-  /* width: 100%; */
+  width: 100%;
   max-width: 100%;
-  height: 200px;
+  height: 205px;
   transform: translateX(-50%);
-  z-index: -1;
-}
-
-.products-item-two::before {
-  content: "";
-  display: block;
-  width: 86.5%;
-  height: 79%;
-  background-image: url(../images/shop-item-desk2.jpg);
-  background-repeat: no-repeat;
-  background-position: center left -5%;
-  background-size: cover;
-  position: absolute;
-  bottom: 87%;
-  left: 7%;
-  z-index: -1;
-}
-
-.products-item-three::before {
-  content: "";
-  display: block;
-  width: 86.5%;
-  height: 79%;
-  background-image: url(../images/shop-item-desk3.jpg);
-  background-repeat: no-repeat;
-  background-position: center left -5%;
-  background-size: cover;
-  position: absolute;
-  bottom: 87%;
-  left: 7%;
   z-index: -1;
 }
 

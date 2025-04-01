@@ -128,49 +128,12 @@
     width: 100%;
   }
 
-  .products-item-one::before {
-    content: "";
-    display: block;
-    width: 86.5%;
-    height: 79%;
-    background-image: url(../images/shop-item-tablet1.jpg);
-    background-repeat: no-repeat;
-    background-position: center left -5%;
-    background-size: cover;
+  .products-item-img > img {
     position: absolute;
-    bottom: 87%;
-    left: 7%;
-    z-index: -1;
-  }
-
-  .products-item-two::before {
-    content: "";
-    display: block;
-    width: 86.5%;
-    height: 79%;
-    background-image: url(../images/shop-item-tablet2.jpg);
-    background-repeat: no-repeat;
-    background-position: center left -5%;
-    background-size: cover;
-    position: absolute;
-    bottom: 87%;
-    left: 7%;
-    z-index: -1;
-  }
-
-  .products-item-three::before {
-    content: "";
-    display: block;
-    width: 86.5%;
-    height: 79%;
-    background-image: url(../images/shop-item-tablet3.jpg);
-    background-repeat: no-repeat;
-    background-position: center left -5%;
-    background-size: cover;
-    position: absolute;
-    bottom: 87%;
-    left: 7%;
-    z-index: -1;
+    top: -230px;
+    left: 50%;
+    width: 90%;
+    max-width: 100%;
   }
 
   .popup-form {
@@ -360,63 +323,12 @@
     width: 100%;
   }
 
-  .products-item-one::before {
-    content: "";
-    display: block;
-    width: 86.5%;
-    height: 79%;
-    background-image: url(../images/shop-item-mobile1.jpg);
-    background-repeat: no-repeat;
-    background-position: center left -5%;
-    background-size: cover;
+  .products-item-img > img {
     position: absolute;
-    bottom: 87%;
-    left: 7%;
-    z-index: -1;
-  }
-
-  .products-item-two::before {
-    content: "";
-    display: block;
-    width: 86.5%;
-    height: 79%;
-    background-image: url(../images/shop-item-mobile2.jpg);
-    background-repeat: no-repeat;
-    background-position: center left -5%;
-    background-size: cover;
-    position: absolute;
-    bottom: 87%;
-    left: 7%;
-    z-index: -1;
-  }
-
-  .products-item-three::before {
-    content: "";
-    display: block;
-    width: 86.5%;
-    height: 79%;
-    background-image: url(../images/shop-item-mobile3.jpg);
-    background-repeat: no-repeat;
-    background-position: center left -5%;
-    background-size: cover;
-    position: absolute;
-    bottom: 87%;
-    left: 7%;
-    z-index: -1;
-  }
-
-  .products-item::before {
-    content: "";
-    display: block;
-    width: 87%;
-    height: 87%;
-    background-repeat: no-repeat;
-    background-position: top 100% left 0%;
-    background-size: cover;
-    position: absolute;
-    bottom: 87%;
-    left: 7%;
-    z-index: -1;
+    top: -230px;
+    left: 50%;
+    width: 90%;
+    max-width: 100%;
   }
 
   .popup-form {
