@@ -125,7 +125,6 @@ body {
 }
 
 .nav-item a:hover {
-  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -298,6 +297,10 @@ body {
   text-transform: uppercase;
 }
 
+.trends-item-heading .article-title a:hover {
+  color: #b59f5b;
+}
+
 /* MAIN */
 
 .container {
@@ -381,7 +384,7 @@ body {
 }
 
 .article-title a:hover {
-  font-weight: 900;
+  color: #b59f5b;
 }
 
 .date {
@@ -410,6 +413,11 @@ body {
   line-height: 22px;
   text-align: left;
   padding-bottom: 15px;
+}
+
+.post-box {
+  display: inline-block;
+  background-color: #eff6f1;
 }
 
 /* Sidebar */
@@ -458,6 +466,9 @@ body {
 
 .new-post-box {
   align-self: flex-start;
+  background-color: #eff6f1;
+  width: 70px;
+  height: 70px;
 }
 
 .new-post img {
@@ -477,6 +488,10 @@ body {
   text-align: left;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.title-new-post a:hover {
+  color: #b59f5b;
 }
 
 .article-new-post {
@@ -590,6 +605,10 @@ input::placeholder {
   text-decoration: none;
 }
 
+.tags-item:hover {
+  border: 1px solid blue;
+}
+
 .themes-item {
   list-style-type: none;
 }
@@ -604,6 +623,10 @@ input::placeholder {
   text-decoration: none;
   padding: 10px 0;
   border-bottom: 1px solid #eeeeee;
+}
+
+.themes-item-link:hover {
+  color: #b59f5b;
 }
 
 .summa {
@@ -641,6 +664,19 @@ input::placeholder {
 .products-item-img {
   position: relative;
   width: 100%;
+  display: inline-block;
+  background-color: #000000;
+}
+
+.products-item-img::before {
+  content: "";
+  position: absolute;
+  top: -227px;
+  left: 0px;
+  right: 1px;
+  bottom: 22px;
+  background-color: #eff6f1;
+  z-index: -1;
 }
 
 .products-item-img > img {
@@ -669,6 +705,10 @@ input::placeholder {
 
 .products-card p {
   padding-bottom: 25px;
+}
+
+.products-card p:hover {
+  font-weight: bold;
 }
 
 .text-link {
